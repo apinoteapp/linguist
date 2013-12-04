@@ -11,12 +11,14 @@ Gem::Specification.new do |s|
   
   if RUBY_PLATFORM =~ /java/
      s.add_dependency 'charlock_holmes-jruby', '>= 0.1.2'
+     s.add_dependency 'pygments.rb-jruby',     '>= 0.5.2'
   else
      s.add_dependency 'charlock_holmes', '~> 0.6.6'
+     s.add_dependency 'pygments.rb',     '~> 0.5.2'
   end
   
   s.add_dependency 'mime-types',      '~> 1.19'
-  s.add_dependency 'pygments.rb',     '~> 0.5.2'
+  
   
   s.add_development_dependency 'json'
   s.add_development_dependency 'mocha'
