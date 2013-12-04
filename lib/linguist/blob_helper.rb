@@ -2,7 +2,7 @@ require 'linguist/generated'
 require 'linguist/language'
 
 require 'charlock_holmes'
-require 'escape_utils'
+require 'uri'
 require 'mime/types'
 require 'pygments'
 require 'yaml'
@@ -102,7 +102,7 @@ module Linguist
       elsif name.nil?
         "attachment"
       else
-        "attachment; filename=#{EscapeUtils.escape_url(File.basename(name))}"
+        "attachment; filename=#{URI.escape(File.basename(name))}"
       end
     end
 

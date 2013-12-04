@@ -14,8 +14,7 @@ Gem::Specification.new do |s|
   else
      s.add_dependency 'charlock_holmes', '~> 0.6.6'
   end
-   
-  s.add_dependency 'escape_utils',    '>= 0.3.1'
+  
   s.add_dependency 'mime-types',      '~> 1.19'
   s.add_dependency 'pygments.rb',     '~> 0.5.2'
   
